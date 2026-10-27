@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lyora Fresh - buah segar pilihan untuk menemani harimu.">
+  <title>Lyora Fresh | Buah Segar Pilihan</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="beranda">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="logo" href="#beranda">lyora<span>fresh.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Buah Pilihan</a></li>
+        <li><a href="#keranjang">Keranjang <span id="cartCount">(0)</span></a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a class="nav-cta" href="#pesan">Pesan Buah</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH FRUIT, FRESH DAY</p>
+        <h1>Buah segar,<br><span>hari makin ceria.</span></h1>
+
+        <p class="hero-description">
+          Pilih buah segar favoritmu untuk camilan sehat dan kesegaran setiap hari.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#produk">
+            Lihat Buah <span aria-hidden="true">→</span>
+          </a>
+          <a class="text-link" href="#tentang">Kenali Lyora Fresh</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="sparkle">✦</span> Fresh picks, happy days.
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="image/profil.jpeg"
+          alt="Aneka buah segar Lyora Fresh"
+          class="hero-photo">
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="benefit-strip">
+      <div class="container benefit-items">
+        <span>✓ Buah segar pilihan</span>
+        <span>✓ Cocok untuk camilan</span>
+        <span>✓ Pesan dengan mudah</span>
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="section container" id="produk">
+      <div class="section-heading">
+        <p class="eyebrow">PILIHAN FAVORIT</p>
+        <h2>Buah segar favoritmu</h2>
+        <p>Pilih buah yang ingin kamu tambahkan ke pesanan.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="product-visual visual-paket">
+            <img src="image/paketbuah.jpeg" alt="Paket Buah Segar" class="product-photo">
+            <span class="product-badge">01</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">PAKET BUAH</p>
+            <h3>Paket Buah Segar</h3>
+            <p>Aneka buah pilihan untuk stok buah di rumah.</p>
+            <div class="product-bottom">
+              <strong>Rp45.000</strong>
+              <button class="add-button" data-product="fruitbox" type="button"
+                aria-label="Pilih Paket Buah Segar">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-apel">
+            <img src="image/apel.jpeg" alt="Apel Merah" class="product-photo">
+            <span class="product-badge">02</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH PER BUAH</p>
+            <h3>Apel Merah</h3>
+            <p>Apel segar yang renyah untuk camilan sehari-hari.</p>
+            <div class="product-bottom">
+              <strong>Rp28.000</strong>
+              <button class="add-button" data-product="apple" type="button"
+                aria-label="Pilih Apel Merah">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-jeruk">
+            <img src="image/jeruk.jpeg" alt="Jeruk Manis" class="product-photo">
+            <span class="product-badge">03</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH SITRUS</p>
+            <h3>Jeruk Manis</h3>
+            <p>Jeruk segar dengan rasa manis dan menyegarkan.</p>
+            <div class="product-bottom">
+              <strong>Rp22.000</strong>
+              <button class="add-button" data-product="orange" type="button"
+                aria-label="Pilih Jeruk Manis">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-parcel">
+            <img src="image/parcel.jpeg" alt="Parcel Buah" class="product-photo">
+            <span class="product-badge">04</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">HADIAH SPESIAL</p>
+            <h3>Parcel Buah</h3>
+            <p>Rangkaian buah segar dalam kemasan cantik, cocok untuk hadiah.</p>
+            <div class="product-bottom">
+              <strong>Rp120.000</strong>
+              <button class="add-button" data-product="parcel" type="button"
+                aria-label="Pilih Parcel Buah">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-pisang">
+            <img src="image/pisang.jpeg" alt="Pisang Cavendish" class="product-photo">
+            <span class="product-badge">05</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH MANIS</p>
+            <h3>Pisang Cavendish</h3>
+            <p>Pisang manis yang praktis untuk sarapan atau camilan.</p>
+            <div class="product-bottom">
+              <strong>Rp18.000</strong>
+              <button class="add-button" data-product="banana" type="button"
+                aria-label="Tambah Pisang Cavendish ke keranjang">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-mangga">
+            <img src="image/mangga.jpeg" alt="Mangga Harum Manis" class="product-photo">
+            <span class="product-badge">06</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH TROPIS</p>
+            <h3>Mangga Harum Manis</h3>
+            <p>Mangga tropis dengan aroma harum dan rasa manis.</p>
+            <div class="product-bottom">
+              <strong>Rp30.000</strong>
+              <button class="add-button" data-product="mango" type="button"
+                aria-label="Tambah Mangga Harum Manis ke keranjang">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-anggur">
+            <img src="image/anggur.jpeg" alt="Anggur Merah" class="product-photo">
+            <span class="product-badge">07</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH PILIHAN</p>
+            <h3>Anggur Merah</h3>
+            <p>Anggur segar untuk camilan bersama keluarga.</p>
+            <div class="product-bottom">
+              <strong>Rp35.000</strong>
+              <button class="add-button" data-product="grapes" type="button"
+                aria-label="Tambah Anggur Merah ke keranjang">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual visual-stroberi">
+            <img src="image/stroberi.jpeg" alt="Stroberi Segar" class="product-photo">
+            <span class="product-badge">08</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">BUAH BERI</p>
+            <h3>Stroberi Segar</h3>
+            <p>Stroberi merah dengan rasa manis dan sedikit asam.</p>
+            <div class="product-bottom">
+              <strong>Rp32.000</strong>
+              <button class="add-button" data-product="strawberry" type="button"
+                aria-label="Tambah Stroberi Segar ke keranjang">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- KERANJANG -->
+    <section class="cart-section" id="keranjang">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">KERANJANG BELANJA</p>
+          <h2>Buah pilihanmu</h2>
+          <p>Periksa jumlah dan total sebelum melanjutkan pesanan.</p>
+        </div>
+
+        <div class="cart-panel" aria-live="polite">
+          <div id="cartItems">
+            <p class="cart-empty">
+              Keranjangmu masih kosong. Tambahkan buah dari katalog, ya!
+            </p>
+          </div>
+
+          <div class="cart-total">
+            <span>Total keranjang</span>
+            <strong id="cartTotal">Rp0</strong>
+          </div>
+
+          <button class="button button-primary submit-button"
+            id="checkoutBtn" type="button" disabled>
+            Lanjut ke Pesanan →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about-section" id="tentang">
+      <div class="container about-content">
+        <div class="about-mark" aria-hidden="true">
+          <span>lyora</span>
+          <b>✿</b>
+          <small>FRESH • SWEET • DAILY</small>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">SEGAR SETIAP HARI</p>
+          <h2>Belanja buah jadi lebih mudah.</h2>
+          <p>
+            Lyora Fresh menyediakan pilihan buah untuk menemani keseharianmu.
+            Pilih favoritmu, tentukan jumlahnya, lalu isi detail pesanan dengan mudah.
+          </p>
+          <a class="text-link" href="#pesan">Pesan buah sekarang →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section class="order-section container" id="pesan">
+      <div class="section-heading">
+        <p class="eyebrow">PESANAN BUAH</p>
+        <h2>Pesan buah favoritmu</h2>
+        <p>Isi formulir berikut. Total harga akan dihitung otomatis.</p>
+      </div>
+
+      <div class="order-layout">
+        <form id="orderForm" class="order-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="customerName">Nama lengkap</label>
+              <input class="form-control" id="customerName" name="customerName"
+                type="text" placeholder="Masukkan nama kamu"
+                required minlength="2">
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone">Nomor HP</label>
+              <input class="form-control" id="customerPhone" name="customerPhone"
+                type="tel" placeholder="Contoh: 081234567890"
+                required pattern="[0-9+() -]{9,16}"
+                title="Masukkan nomor telepon yang valid.">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="customerAddress">Alamat pengiriman</label>
+            <textarea class="form-control" id="customerAddress"
+              name="address" rows="3"
+              placeholder="Masukkan alamat lengkap"
+              required minlength="8"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Catatan (opsional)</label>
+            <textarea class="form-control" id="notes" name="notes"
+              rows="2" placeholder="Catatan tambahan untuk pesananmu"></textarea>
+          </div>
+
+          <button class="button button-primary submit-button" type="submit">
+            Buat Pesanan <span aria-hidden="true">→</span>
+          </button>
+
+          <button class="button whatsapp-button" id="whatsappOrderBtn" type="button">
+            Pesan lewat WhatsApp ↗
+          </button>
+
+          <p class="whatsapp-placeholder-note">
+            Nomor WhatsApp masih contoh. Ganti nomor placeholder di script.js
+            sebelum digunakan sungguhan.
+          </p>
+
+          <p class="form-disclaimer">
+            Demo untuk latihan. Form ini tidak mengirim data ke server
+            atau melakukan pembayaran sungguhan.
+          </p>
+        </form>
+
+        <!-- RINGKASAN PESANAN -->
+        <aside class="order-summary" aria-live="polite">
+          <p class="eyebrow">RINGKASAN PESANAN</p>
+          <h3>Ringkasan pesanan</h3>
+
+          <div class="summary-product">
+            <div class="summary-icon">✿</div>
+            <div>
+              <strong id="summaryProduct">Paket Buah Segar</strong>
+              <p id="summaryPrice">Rp45.000 / produk</p>
+            </div>
+          </div>
+
+          <div class="summary-line">
+            <span>Harga buah</span>
+            <span id="unitPrice">Rp45.000</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Jumlah</span>
+            <span id="summaryQuantity">1</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Pengiriman</span>
+            <span class="free-shipping">Dihitung terpisah</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total pesanan</span>
+            <strong id="totalPrice">Rp45.000</strong>
+          </div>
+
+          <p class="summary-note">
+            ✿ Terima kasih sudah memilih Lyora Fresh.
+          </p>
+
+          <div id="orderMessage" class="order-message" role="status" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-contact">
+      <h2>Hubungi Kami</h2>
+      <p>Nama: Laila Maulida</p>
+      <p>NIM: A12.2025.07333</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lyora Fresh</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
