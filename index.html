@@ -294,6 +294,45 @@
             </div>
           </div>
 
+<!-- Dropdown pilihan buah -->
+<div class="form-group">
+  <label for="productSelect">Pilih produk</label>
+  <select class="form-select" id="productSelect" name="product" required>
+    <option value="fruitbox">Paket Buah Segar — Rp45.000</option>
+    <option value="apple">Apel Merah — Rp28.000</option>
+    <option value="orange">Jeruk Manis — Rp22.000</option>
+    <option value="parcel">Parcel Buah — Rp120.000</option>
+    <option value="banana">Pisang Cavendish — Rp18.000</option>
+    <option value="mango">Mangga Harum Manis — Rp30.000</option>
+    <option value="grapes">Anggur Merah — Rp35.000</option>
+    <option value="strawberry">Stroberi Segar — Rp32.000</option>
+  </select>
+</div>
+
+<!-- Radio button metode penerimaan -->
+<div class="form-group">
+  <label>Metode penerimaan</label>
+  <div class="radio-options">
+    <label>
+      <input type="radio" name="deliveryMethod"
+             value="Diantar ke alamat" checked>
+      Diantar ke alamat
+    </label>
+    <label>
+      <input type="radio" name="deliveryMethod"
+             value="Ambil sendiri">
+      Ambil sendiri
+    </label>
+  </div>
+</div>
+
+<!-- Input jumlah produk -->
+<div class="form-group">
+  <label for="quantity">Jumlah produk</label>
+  <input type="number" id="quantity" name="quantity"
+         min="1" max="20" value="1" required>
+</div>
+
           <div class="form-group">
             <label for="customerAddress">Alamat pengiriman</label>
             <textarea class="form-control" id="customerAddress"
